@@ -11,8 +11,7 @@ import Limpieza from '../pages/pagLimpieza'
 import SobreNos from '../pages/pagSobreNos'
 import Contacto from '../pages/pagContacto'
 import Eventos from '../pages/pagEventos'
-
-
+import CardArticulos from '../components/Card/CardArticulos'
 
 
 
@@ -31,6 +30,7 @@ const rutas = () => {
             <Route path='/sobrenosotros' element={<SobreNos/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/eventos' element={<Eventos/>}/>
+            <Route path='/item' element={<CardArticulos/>}/>
             
         </Routes>
 

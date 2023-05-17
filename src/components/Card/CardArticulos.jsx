@@ -11,7 +11,7 @@ const CardCarniceria = (props) => {
         <div className="card-body" style={{width: '30rem'}}>
             <img src={Imagen} className="card-img-top" alt="..."/>
                 <div className="card-body ">
-                <button onClick={()=>navigate(`/producto/${Nombre}`)}>Ver Mas</button>
+                
                     <h1 className="card-title">{Nombre}</h1>
                     <p className="card-title">{Detalle}</p>
                     <p className="card-title">{Precio}</p>
