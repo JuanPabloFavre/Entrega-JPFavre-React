@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+    background-image:url(../images/fondo-body.png);
+    background-size:cover;
+}
+
+ion-icon:hover{
+    color: rgb(27, 90, 163);
+    cursor: pointer;
+}
+
+ion-icon{
+    color: black;
+}
+
+
+.nav-link{
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.logo{
+    width: 10px;
+    height: 10px;
+}
+
+.titulo-empresa{
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 4rem;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.titulo-empresa:hover{
+    color: rgb(6, 25, 87);
+}
+
+.menu{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    background-color: rgb(7, 39, 28);
+    border-radius: 10px;
+    width: 700px; 
+    margin-top: 20px;
+   
+    }
+
+.menu li{
+height: 10px;
+padding: 20px;
+color: rgb(255, 255, 255);
+margin-bottom: 20px;
+list-style: none;
+font-size: 1.5rem;
+
+
+}
+
+.menu li:hover{
+    color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.orden-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 50px; 
+    
+          
+}
+
+.articulosInicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 50px; 
+      
+}
+
+.card-body{
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    
+      
+}
+
+
+.card{
+    margin-top: 50px;
+    border: solid black 5px;
+    border-radius: 10px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.card img{
+    width: 25rem;
+}
+
+
+.logo-empresa img{
+    width: 150px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+
+   
+}
+
+.ulFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+       
+}
+
+.cursor{
+    cursor: pointer;
+
+}
+
+.cursor:hover{
+    color: blue;
+}
+
+.fondo{
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    margin: 50px;
+    height: 60%;
+    
+    }
+
+    .fondo img{
+        width: 30%;
+    }
+
+    .titulo{
+        font-size: 4rem;
+        background-color: rgba(169, 169, 169, 0.5);
+        font-family: 'Trebuchet MS';
+        
+    }
+
+    .link{
+        font-size: 3rem;
+        text-decoration:none;
+
+    }
+
+    .link:hover{
+        color: black;
+        cursor: pointer;
+        
+    }
+
