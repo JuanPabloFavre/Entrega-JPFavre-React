@@ -156,6 +156,7 @@ const AlmacenP  = () => {
 
                  {almacen.map((almacen,index)=>(
                        <Articulos key={index} Imagen={almacen.Imagen} Nombre={almacen.Nombre} Detalle ={almacen.Detalle} Precio={almacen.Precio}/>
+                       
 
                  ))}
             </div>
