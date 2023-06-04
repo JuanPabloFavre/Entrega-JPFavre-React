@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 
 const Navbar = (props) => {
-	console.log(props)
+	
 	const {navbar_Items} = props
 
 

@@ -1,126 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
-import banana from '../../assets/Fruteria/bananas.jpg'
-import cebolla from '../../assets/Fruteria/cebolla.jpg'
-import frutilla from '../../assets/Fruteria/frutilla.jpg'
-import kiwi from '../../assets/Fruteria/kiwi.jpg'
-import lechuga from '../../assets/Fruteria/lechuga.jpg'
-import mandarina from '../../assets/Fruteria/mandarina.jpg'
-import manzana from '../../assets/Fruteria/manzana.jpg'
-import morronr from '../../assets/Fruteria/morronR.jpg'
-import morronv from '../../assets/Fruteria/morronV.jpg'
-import naranja from '../../assets/Fruteria/naranja.jpg'
-import tomate from '../../assets/Fruteria/tomate.jpg'
-import zanahoria from '../../assets/Fruteria/zanahoria.jpg'
+
 
 import Articulos from '../Card/CardArticulos'
 import Spinner from '../Bootstrap/Spinner';
-
-
-
-const fruteria = [
-
-
-    {
-        Nombre: 'Banana',
-        Imagen: banana,
-        Detalle: 'Precio por unidad',
-        Precio: '$150'
-    },
-
-    {
-        Nombre: 'Cebolla',
-        Imagen: cebolla,
-        Detalle: 'Precio por unidad',
-        Precio: '$125'
-
-    },
-
-    {
-        Nombre: 'Frutilla',
-        Imagen: frutilla,
-        Detalle: 'Precio por unidad',
-        Precio: '$32'
-    },
-
-    {
-        Nombre: 'Kiwi',
-        Imagen: kiwi,
-        Detalle: 'Precio por unidad',
-        Precio: '$60'
-
-    },
-
-    {
-        Nombre: 'Lechuga',
-        Imagen: lechuga,
-        Detalle: 'Precio por unidad',
-        Precio: '$50'
-    },
-
-    {
-        Nombre: 'Mandarina',
-        Imagen: mandarina,
-        Detalle: 'Precio por unidad',
-        Precio: '$45'
-
-    },
-
-    {
-        Nombre: 'Manzana',
-        Imagen: manzana,
-        Detalle: 'Precio por unidad',
-        Precio: '$50'
-    },
-
-    {
-        Nombre: 'Morron Rojo',
-        Imagen: morronr,
-        Detalle: 'Precio por unidad',
-        Precio: '$45'
-
-    },
-
-    {
-        Nombre: 'Morron Verde',
-        Imagen: morronv,
-        Detalle: 'Precio por unidad',
-        Precio: '$50'
-    },
-
-    {
-        Nombre: 'Naranja',
-        Imagen: naranja,
-        Detalle: 'Precio por unidad',
-        Precio: '$45'
-
-    },
-
-    {
-        Nombre: 'Tomate',
-        Imagen: tomate,
-        Detalle: 'Precio por unidad',
-        Precio: '$50'
-    },
-
-    {
-        Nombre: 'Zanahoria',
-        Imagen: zanahoria,
-        Detalle: 'Precio por unidad',
-        Precio: '$45'
-
-    },
+import { ProductoContext } from '../../context/ProveedorProducto';
+import { CarritoContext } from '../../context/ProveedorCarrito';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 
-]
-
-const FruteriaP  = () => {
+const FruteriaP = () => {
     const [loadfrut, setloadfrut] = useState(false)
     const [fruterias, setfruterias] = useState([])
-   
+    const { fruteria } = useContext(ProductoContext)
+    const { carrito, addCarrito } = useContext(CarritoContext)
+
+    const navigate = useNavigate()
+
 
     useEffect(() => {
         setloadfrut(true)
@@ -133,32 +32,34 @@ const FruteriaP  = () => {
 
         })
 
-        iniciar.then((res) => {
+        iniciar.then(() => {
 
-            console.log(res)
+            
             setfruterias(fruteria)
             setloadfrut(false)
 
-        }).catch((err) => console.log(err))
+        }).catch()
 
     }, [])
 
 
 
     return (
-        
+
         <div>
-            {loadfrut && <Spinner/>}
+            <h2 className='fs-1 d-flex align-items-center justify-content-center' ><ion-icon name="cart-outline"></ion-icon> {carrito.length}</h2>
+            <button className='btn btn-success' onClick={() => navigate('/carrito')}>Ver Carrito</button>
+            {loadfrut && <Spinner />}
 
-            {!loadfrut && fruterias.length >0 && 
+            {!loadfrut && fruteria.length > 0 &&
 
-            <div className='articulos'>
+                <div className='articulos'>
 
-                 {fruteria.map((fruteria,index)=>(
-                       <Articulos key={index} Imagen={fruteria.Imagen} Nombre={fruteria.Nombre} Detalle ={fruteria.Detalle} Precio={fruteria.Precio}/>
+                    {fruterias.map((item) => (
+                        <Articulos addCarrito={addCarrito} {...item} />
 
-                 ))}
-            </div>
+                    ))}
+                </div>
             }
 
         </div>

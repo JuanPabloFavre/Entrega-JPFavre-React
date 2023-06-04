@@ -7,7 +7,7 @@ import carniceria from '../../assets/menu/carniceria.jpg'
 import fruteria from '../../assets/menu/fruteria.jpg'
 import bebida from '../../assets/menu/Gaseosas.jpg'
 import comuida from '../../assets/menu/comida.jpg'
-import limpieza from '../../assets/menu/Gaseosas.jpg'
+import limpieza from '../../assets/menu/limpieza.jpg'
 import CardMenu from '../Card/CardMenu';
 
 
@@ -40,16 +40,17 @@ const producto = [
         
     },
     {
-        Nombre: 'Menu',
-        Imagen: comuida,
-        path: '/comida'
+        Nombre: 'Limpieza',
+        Imagen: limpieza,
+        path: '/limpieza'
       
     },
 
     {
+       
         Nombre: 'Menu',
-        Imagen: limpieza,
-        path: '/limpieza'
+        Imagen: comuida,
+        path: '/comida'
       
     }
   
@@ -74,13 +75,13 @@ const Menu = () => {
 
         })
 
-        iniciar.then((res) => {
+        iniciar.then(() => {
 
-            console.log(res)
+            
             setProductos(producto)
             setloading(false)
 
-        }).catch((err) => console.log(err))
+        }).catch()
 
     }, [])
 

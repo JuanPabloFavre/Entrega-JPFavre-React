@@ -1,130 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import Spinner from '../Bootstrap/Spinner';
 import Articulos from '../Card/CardArticulos';
-
-import picada from '../../assets/Carniceria/picada.jpg'
-import vacio from '../../assets/Carniceria/vacio.jpg'
-import asado from '../../assets/Carniceria/asado.jpg'
-import picana from '../../assets/Carniceria/picana.jpg'
-import matambre from '../../assets/Carniceria/matambre.jpg'
-import chorizo from '../../assets/Carniceria/chorizo.jpg'
-import solomillo from '../../assets/Carniceria/solomillo .jpg'
-import entrana from '../../assets/Carniceria/entrana.jpg'
-import hamburguesa from '../../assets/Carniceria/hamburguesa.jpg'
-import ojodebife from '../../assets/Carniceria/ojodebife.jpg'
-import rack from '../../assets/Carniceria/rackdeCordero.jpg'
-import tomahawk from '../../assets/Carniceria/tomahawk.jpg'
-
-
-
-
-
-const carniceria = [
-    {
-        Nombre: 'Carne Picada',
-        Imagen: picada,
-        Detalle: 'Precio por Kg',
-        Precio: '$350'
-        
-    },
-  
-    {
-        Nombre: 'Vacio',       
-        Imagen: vacio,
-        Detalle: 'Precio por Kg',
-        Precio: '$ 562'
-       
-    },
-  
-    {
-        Nombre: 'Asado de Tira',
-        Imagen: asado,
-        Detalle: 'Precio por Kg',
-        Precio:  '$ 456'
-       
-    },
-  
-    {
-        Nombre: 'Picaña de Exportacion',
-        Imagen: picana,
-        Detalle: 'Precio por Kg',
-        Precio:  '$ 690'
-        
-    },
-    {
-        Nombre: 'Matambre de Cerdo',
-        Imagen: matambre,
-        Detalle: 'Precio por Kg',
-        Precio:  '$500'
-      
-    },
-
-    {
-        Nombre: 'Chorizo Mezcla',
-        Imagen: chorizo,
-        Detalle: 'Precio por Kg',
-        Precio: '$ 390'
-      
-    },
-    {
-        Nombre: 'Entraña',
-        Imagen: entrana,
-        Detalle: 'Precio por Kg',
-        Precio: '$550'
-        
-    },
-  
-    {
-        Nombre: 'Hamburguesa',       
-        Imagen: hamburguesa,
-        Detalle: 'Precio por Uni',
-        Precio: '$ 62'
-       
-    },
-  
-    {
-        Nombre: 'Ojo de Bife',
-        Imagen: ojodebife,
-        Detalle: 'Precio por Kg',
-        Precio:  '$ 856'
-       
-    },
-  
-    {
-        Nombre: 'Rack de Cordero',
-        Imagen: rack,
-        Detalle: 'Precio por Kg',
-        Precio:  '$ 990'
-        
-    },
-    {
-        Nombre: 'Solomillo',
-        Imagen: solomillo,
-        Detalle: 'Precio por Kg',
-        Precio:  '$800'
-      
-    },
-
-    {
-        Nombre: 'Tomahawk',
-        Imagen: tomahawk,
-        Detalle: 'Precio por Kg',
-        Precio: '$ 890'
-      
-    }
-  
-  
-  ]
+import { ProductoContext } from '../../context/ProveedorProducto';
+import { CarritoContext } from '../../context/ProveedorCarrito';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const CarniceriaP = () => {
 
-    
+
     const [loadmeat, setloadmeat] = useState(false)
     const [carnes, setcarnes] = useState([])
-   
+    const { carniceria } = useContext(ProductoContext)
+    const { carrito, addCarrito } = useContext(CarritoContext)
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         setloadmeat(true)
@@ -137,13 +29,13 @@ const CarniceriaP = () => {
 
         })
 
-        iniciar.then((res) => {
+        iniciar.then(() => {
 
-            console.log(res)
+            
             setcarnes(carniceria)
             setloadmeat(false)
 
-        }).catch((err) => console.log(err))
+        }).catch()
 
     }, [])
 
@@ -151,17 +43,19 @@ const CarniceriaP = () => {
 
     return (
         <div>
-            {loadmeat && <Spinner/>}
+            <h2 className='fs-1 d-flex align-items-center justify-content-center' ><ion-icon name="cart-outline"></ion-icon> {carrito.length}</h2>
+            <button className='btn btn-success' onClick={() => navigate('/carrito')}>Ver Carrito</button>
+            {loadmeat && <Spinner />}
 
-            {!loadmeat && carnes.length >0 && 
+            {!loadmeat && carniceria.length > 0 &&
 
-            <div className='articulos'>
+                <div className='articulos'>
 
-                 {carniceria.map((carniceria,index)=>(
-                       <Articulos key={index} Imagen={carniceria.Imagen} Nombre={carniceria.Nombre} Detalle ={carniceria.Detalle} Precio={carniceria.Precio}/>
+                    {carnes.map((item) => (
+                        <Articulos addCarrito={addCarrito} {...item} />
 
-                 ))}
-            </div>
+                    ))}
+                </div>
             }
 
         </div>

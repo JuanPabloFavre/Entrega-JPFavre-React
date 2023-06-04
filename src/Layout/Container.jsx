@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar';
-import Cart from '../components/CartWidget/Cart';
+
 
 const navbar_Items = [
   {
@@ -27,11 +27,7 @@ const Container = () => {
   return (
     <div>
          <Navbar navbar_Items= {navbar_Items}/> 
-         <Cart /> 
-         
-        
-        
-        
+               
        
     </div>
     

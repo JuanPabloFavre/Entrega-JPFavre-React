@@ -5,7 +5,7 @@ import Logo from '../components/Logo'
 import Container from '../Layout/Container'
 import Footer from '../components/Footer/FooterBar'
 import Banner from '../components/Bootstrap/banner'
-import Form from '../components/Bootstrap/form'
+import Formulario from '../components/Bootstrap/formulario'
 
 const pagContacto = () => {
     return (
@@ -14,7 +14,7 @@ const pagContacto = () => {
         <Container/>
         <Banner />
         <h1 className='titulo'>Contacto</h1>
-        <Form/>
+        <Formulario/>
         <Footer items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]}/>      
         </div>
     );

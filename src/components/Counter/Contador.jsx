@@ -2,56 +2,59 @@ import { useState, useEffect } from 'react'
 import useColor from '../Hooks/useColor'
 
 
+
 const Contador = (props) => {
 
-    const {initiaValue} = props
+    
+     const { initiaValue } = props
 
     const [numero, setnumero] = useState(initiaValue || 0)
     const [limitado, setLimitado] = useState(false)
     const [negativo, setNegativo] = useState(false)
     const [stock, setstock] = useState(10)
 
-
+    
     const sumar = () => setnumero(numero + 1);
     const restar = () => setnumero(numero - 1);
     const resetear = () => setnumero(0);
     const haystock = () => setstock(stock - numero)
+
+
+    const { variarColor } = useColor(numero)
     
 
-    const {variarColor} = useColor(numero)
-  
 
     useEffect(() => {
 
-        if(numero >= stock){
+        if (numero >= stock) {
             setLimitado(true)
         }
 
-        return()=>{
+        return () => {
             setLimitado(false)
 
-            } 
+        }
 
-    },[numero])
+    }, [numero])
 
 
     useEffect(() => {
 
-         if(numero <= 0){
-        setNegativo(true)
-         }
+        if (numero <= 0) {
+            setNegativo(true)
+        }
 
-    return()=>{
-        setNegativo(false)
+        return () => {
+            setNegativo(false)
 
-        } 
+        }
 
-},[numero])
+    }, [numero])
 
 
     return (
-        <div className = {`${limitado}`}>
-            
+        <div className={`${limitado}`}>
+
             <h3 className='text-primary'>Cantidad:{numero}</h3>
             <div className='botones'>
                 <div >
@@ -63,11 +66,12 @@ const Contador = (props) => {
                 </div>
 
                 <div>
-                <button disabled={negativo} className='btn btn-info btn-lg' onClick={()=>{haystock();resetear()}}>Agregar</button>
+                    <button disabled={negativo} className='btn btn-info btn-lg' onClick={() => { haystock(); resetear()}}>Agregar</button>
                 </div>
-                
+           
+
             </div>
-            <div><h3 style={{color: variarColor(stock)}}> Stock: {stock}</h3></div>
+            <div><h3 style={{ color: variarColor(stock) }}> Stock: {stock}</h3></div>
         </div>
 
 

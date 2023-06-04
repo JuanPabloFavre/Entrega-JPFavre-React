@@ -1,6 +1,11 @@
 import React from 'react';
 
-const form = () => {
+const formulario = () => {
+
+
+
+
+
     return (
         <form className='container'>
 
@@ -35,7 +40,7 @@ const form = () => {
             </select>
 
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Cuentanos brevemente</label>
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
@@ -49,4 +54,4 @@ const form = () => {
     );
 };
 
-export default form;
+export default formulario;
