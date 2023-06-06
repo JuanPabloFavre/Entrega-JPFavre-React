@@ -18,7 +18,7 @@ const nosotros = () => {
                 para trabajar e invertir, impactando de manera positiva en todas las comunidades donde estamos presentes.
                 ¡Hay un lugar para que vos también seas parte de esta Cultura única!
             </p>
-            <img src={nosotrosfoto} class="img-fluid" alt="..."></img>
+            <img src={nosotrosfoto} className="img-fluid" alt="..."></img>
             
 
 
@@ -45,7 +45,7 @@ const nosotros = () => {
 
             </p>
 
-            <img src={superfoto} class="img-fluid" alt="..."></img>
+            <img src={superfoto} className="img-fluid" alt="..."></img>
         </div>
     );
 };

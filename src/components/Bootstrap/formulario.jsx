@@ -9,47 +9,47 @@ const formulario = () => {
     return (
         <form className='container'>
 
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" />
+            <div className="mb-3">
+                <label for="formGroupExampleInput" className="form-label">Nombre</label>
+                <input type="text" className="form-control" id="formGroupExampleInput" />
             </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" />
+            <div className="mb-3">
+                <label for="formGroupExampleInput2" className="form-label">Apellido</label>
+                <input type="text" className="form-control" id="formGroupExampleInput2" />
             </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Direccion</label>
-                <input type="text" class="form-control" id="formGroupExampleInput3"/>
+            <div className="mb-3">
+                <label for="formGroupExampleInput" className="form-label">Direccion</label>
+                <input type="text" className="form-control" id="formGroupExampleInput3"/>
             </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="formGroupExampleInput4"  />
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-
+            <div className="mb-3">
+                <label for="formGroupExampleInput2" className="form-label">Telefono</label>
+                <input type="text" className="form-control" id="formGroupExampleInput4"  />
             </div>
 
-            <select class="form-select" aria-label="Default select example">
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Correo Electronico</label>
+                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+
+            </div>
+
+            <select className="form-select" aria-label="Default select example">
                 <option selected>Genero</option>
                 <option value="1">Masculino</option>
                 <option value="2">Femenino</option>
                 <option value="3">Otro</option>
             </select>
 
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div className="mb-3">
+                <label for="exampleFormControlTextarea1" className="form-label">Comentarios</label>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <div class="mb-3 form-check d-flex justify-content-center">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Deseas recibir promociones</label>
+            <div className="mb-3 form-check d-flex justify-content-center">
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Deseas recibir promociones</label>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" className="btn btn-primary">Enviar</button>
         </form>
     );
 };

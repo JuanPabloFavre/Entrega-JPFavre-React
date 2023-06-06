@@ -5,7 +5,7 @@ const eventos = () => {
     return (
         <div className='container'>
             <h2>Bases y condiciones del Sorteo, Huggies"Semana del bebé"</h2>
-            <img src={Sorteo} class="img-fluid" alt="..."></img>
+            <img src={Sorteo} className="img-fluid" alt="..."></img>
             <p>
                 Lefed S.A (en adelante el “Organizador”), con domicilio en Camino Carrasco 997 realizará una promoción,
                 para sus líneas de productos para bebé de la marca Huggies,

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { db } from '../firebase.config'
+import { addDoc, collection } from 'firebase/firestore';
+import Swal from 'sweetalert2'
 
 const Form = (props) => {
-    const { total, compras } = props
+
+       const { total, compras } = props
 
     const [validarForm, setValidarForm] = useState({
         buyer: {
@@ -27,34 +31,51 @@ const Form = (props) => {
         })
     }
 
+    const mostrarAlerta =() =>{ 
+        Swal.fire(
+        'Compra Confirmada!',
+        'Bien hecho'
+    )}
 
+    const confirmarCompra = async(cc) =>{
+    cc.preventDefault()
+
+
+
+    const col = collection(db, 'Ordenes')
+    const ordenes = await addDoc(col,validarForm)
+    cc.target.reset()
+    
+
+}
     return (
         <div className='container'>
             <h2>Ingresar informacion de comprador</h2>
-            <form action="">
+            <form onSubmit={confirmarCompra} action="">
 
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input onChange={validar} type="text" name='nombre' class="form-control" id="exampleFormControlInput1" />
+                <div className="mb-3">
+                    <label for="exampleFormControlInput1" className="form-label">Nombre</label>
+                    <input onChange={validar} type="text" name='nombre' className="form-control" id="exampleFormControlInput1" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
-                    <input onChange={validar} type="text" name='apellido' class="form-control" id="exampleFormControlInput1" />
+                <div className="mb-3">
+                    <label for="exampleFormControlInput1" className="form-label">Apellidos</label>
+                    <input onChange={validar} type="text" name='apellido' className="form-control" id="exampleFormControlInput1" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                    <input onChange={validar} type="email" name='email' class="form-control" id="exampleFormControlInput1" />
+                <div className="mb-3">
+                    <label for="exampleFormControlInput1" className="form-label">Correo electronico</label>
+                    <input onChange={validar} type="email" name='email' className="form-control" id="exampleFormControlInput1" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                    <input onChange={validar} type="number" name='telefono' class="form-control" id="exampleFormControlInput1" />
+                <div className="mb-3">
+                    <label for="exampleFormControlInput1" className="form-label">Telefono</label>
+                    <input onChange={validar} type="number" name='telefono' className="form-control" id="exampleFormControlInput1" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                    <textarea onChange={validar} name='comentarios' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div className="mb-3">
+                    <label for="exampleFormControlTextarea1" className="form-label">Comentarios</label>
+                    <textarea onChange={validar} name='comentarios' className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type='submit' className='btn btn-success btn-lg'>Confirmar Compra</button>
-            </form>
+                <button type='submit' className='btn btn-success btn-lg' onClick={mostrarAlerta}>Confirmar Compra</button>
+               </form>
+            
 
 
         </div>
