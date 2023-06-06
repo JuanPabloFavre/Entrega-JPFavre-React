@@ -15,8 +15,8 @@ const pagInicio = () => {
     <div className="App">
      
         <Logo/>
-        <Container/>
         <Banner />
+        <Container/>
         <h1 className='titulo'>Inicio</h1>
         <Menu/>
         <FooterBar items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]}/>             

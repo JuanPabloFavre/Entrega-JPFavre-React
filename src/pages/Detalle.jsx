@@ -1,25 +1,26 @@
 import React from 'react';
-import '../styles/style.css'
-import '../App.css'
 import Logo from '../components/Logo'
 import Container from '../Layout/Container'
-import Footer from '../components/Footer/FooterBar'
 import Banner from '../components/Bootstrap/banner'
-import Nosotros from '../components/Bootstrap/nosotros'
+import Footer from '../components/Footer/FooterBar'
 
-const pagSobreNos = () => {
+ 
+
+
+const Detalle = () => {
+
+    
+    
     return (
         <div>
             <Logo />
             <Banner />
             <Container />
-            <h1 className='titulo'>Sobre Nosotros</h1>
-            <Nosotros/>
+            <h1 className='titulo'>Detalle</h1>
+            
             <Footer items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]} />
-
-
         </div>
     );
 };
 
-export default pagSobreNos;
+export default Detalle;

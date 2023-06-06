@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/style.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink,useNavigate } from 'react-router-dom'
+
 
 
 
@@ -8,14 +9,15 @@ import { NavLink } from 'react-router-dom'
 const Navbar = (props) => {
 	
 	const {navbar_Items} = props
+	const navigate = useNavigate()
 
 
 
 	return (
 
-		<nav className="navbar bg-body-tertiary opacity-50">
+		<nav className="navbar bg-body-tertiary opacity-90">
 			<div className="container-fluid">
-				<a className="navbar-brand text-dark fs-1" href="/">McDowell’s</a>
+			<button className='btn btn-info btn-lg' onClick={()=>navigate(-1)}><ion-icon name="arrow-back-sharp"></ion-icon></button>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>

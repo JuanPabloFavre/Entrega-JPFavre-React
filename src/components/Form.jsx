@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { db } from '../firebase.config'
 import { addDoc, collection } from 'firebase/firestore';
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
+
 
 const Form = (props) => {
 
-       const { total, compras } = props
+    const { total, compras } = props
+    const navigate = useNavigate()
 
     const [validarForm, setValidarForm] = useState({
         buyer: {
@@ -31,23 +34,28 @@ const Form = (props) => {
         })
     }
 
-    const mostrarAlerta =() =>{ 
+    const mostrarAlerta = () => {
         Swal.fire(
-        'Compra Confirmada!',
-        'Bien hecho'
-    )}
+            'Compra Confirmada!',
+            'Bien hecho',
+            window.location.replace(''),
+            navigate(-2)
 
-    const confirmarCompra = async(cc) =>{
-    cc.preventDefault()
+        )
+    }
+
+
+    const confirmarCompra = async (cc) => {
+        cc.preventDefault()
 
 
 
-    const col = collection(db, 'Ordenes')
-    const ordenes = await addDoc(col,validarForm)
-    cc.target.reset()
-    
+        const col = collection(db, 'Ordenes')
+        const ordenes = await addDoc(col, validarForm)
+        cc.target.reset()
 
-}
+
+    }
     return (
         <div className='container'>
             <h2>Ingresar informacion de comprador</h2>
@@ -74,8 +82,8 @@ const Form = (props) => {
                     <textarea onChange={validar} name='comentarios' className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button type='submit' className='btn btn-success btn-lg' onClick={mostrarAlerta}>Confirmar Compra</button>
-               </form>
-            
+            </form>
+
 
 
         </div>

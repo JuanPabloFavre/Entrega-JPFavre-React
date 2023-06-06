@@ -14,6 +14,7 @@ import Eventos from '../pages/pagEventos'
 import Carrito from '../pages/Carrito'
 import ProveedorProducto from '../context/ProveedorProducto.jsx'
 import ProveedorCarrito from '../context/ProveedorCarrito'
+import Articulos from '../pages/Detalle'
 
 
 
@@ -38,6 +39,7 @@ const rutas = () => {
             <Route path='/contacto' element={<Contacto />} />
             <Route path='/eventos' element={<Eventos />} />
             <Route path='/carrito' element={<Carrito/>} />
+            <Route path='/articulo' element={<Articulos/>}/>
 
 
           </Routes>

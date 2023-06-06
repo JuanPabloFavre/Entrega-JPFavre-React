@@ -11,8 +11,8 @@ const pagEventos = () => {
     return (
         <div>
             <Logo />
-            <Container />
             <Banner />
+            <Container />
             <h1 className='titulo'>Eventos</h1>
             <Eventos />
             <Footer items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]} />

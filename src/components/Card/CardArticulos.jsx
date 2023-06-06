@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import useColor from '../Hooks/useColor'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 
@@ -20,7 +21,7 @@ const CardArticulos = ({ Nombre, Detalle, Imagen, Precio, addCarrito, inCarrito,
     const resetear = () => setnumero(0);
     const haystock = () => setstock(stock - numero)
     
-    
+    const navigate = useNavigate()
     
 
 
@@ -89,6 +90,7 @@ const CardArticulos = ({ Nombre, Detalle, Imagen, Precio, addCarrito, inCarrito,
 
                         </div>
                         <div><h3 style={{ color: variarColor(stock) }}> Stock: {stock}</h3></div>
+                        <div><button onClick={()=>navigate('/articulo/')} className="btn btn-secondary p-2">Ver mas</button></div>
                     </div>
                 )}
 

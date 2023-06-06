@@ -11,8 +11,8 @@ const pagBebidas = () => {
   return (
     <div>
       <Logo />
-      <Container />
       <Banner />
+      <Container />
       <h1 className='titulo'>Bebida</h1>
       <BebidaP/>
       <Footer items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]} />
