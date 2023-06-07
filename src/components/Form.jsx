@@ -38,8 +38,8 @@ const Form = (props) => {
         Swal.fire(
             'Compra Confirmada!',
             'Bien hecho',
-            window.location.replace(''),
-            navigate(-2)
+            navigate('/'),
+            window.location.replace('/')
 
         )
     }
@@ -63,7 +63,7 @@ const Form = (props) => {
 
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-                    <input onChange={validar} type="text" name='nombre' className="form-control" id="exampleFormControlInput1" />
+                    <input onChange={validar} type="text" name='nombre' className="form-control" id="exampleFormControlInput1"  />
                 </div>
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Apellidos</label>
@@ -71,14 +71,14 @@ const Form = (props) => {
                 </div>
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Correo electronico</label>
-                    <input onChange={validar} type="email" name='email' className="form-control" id="exampleFormControlInput1" />
+                    <input onChange={validar} type="email" name='email' className="form-control" id="exampleFormControlInput1"  />
                 </div>
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Telefono</label>
                     <input onChange={validar} type="number" name='telefono' className="form-control" id="exampleFormControlInput1" />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleFormControlTextarea1" className="form-label">Comentarios</label>
+                    <label for="exampleFormControlTextarea1" className="form-label">Comentarios(Opcional)</label>
                     <textarea onChange={validar} name='comentarios' className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button type='submit' className='btn btn-success btn-lg' onClick={mostrarAlerta}>Confirmar Compra</button>

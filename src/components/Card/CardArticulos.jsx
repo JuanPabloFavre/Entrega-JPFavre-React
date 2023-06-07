@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import useColor from '../Hooks/useColor'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 
-const CardArticulos = ({ Nombre, Detalle, Imagen, Precio, addCarrito, inCarrito,Contador }) => {
+const CardArticulos = ({ Codigo,Nombre,Categoria, Detalle, Imagen, Precio, addCarrito, inCarrito,Contador }) => {
 
 
     const [numero, setnumero] = useState(0)
@@ -61,6 +61,7 @@ const CardArticulos = ({ Nombre, Detalle, Imagen, Precio, addCarrito, inCarrito,
         <div className="card-body" style={{ width: '30rem' }}>
           {!inCarrito && (  <img src={Imagen} className="card-img-top" alt="..." />)}
             <div className="card-body ">
+                
                 <h1 className="card-title">{Nombre}</h1>
                 <p className="card-title">{Detalle}</p>
                 <h4 className="card-title">${Precio}</h4>
@@ -90,7 +91,7 @@ const CardArticulos = ({ Nombre, Detalle, Imagen, Precio, addCarrito, inCarrito,
 
                         </div>
                         <div><h3 style={{ color: variarColor(stock) }}> Stock: {stock}</h3></div>
-                        <div><button onClick={()=>navigate('/articulo/')} className="btn btn-secondary p-2">Ver mas</button></div>
+                        <div><button onClick={()=>navigate(`/${Categoria}/${Codigo}`)} className="btn btn-secondary p-2">Ver mas</button></div>
                     </div>
                 )}
 

@@ -14,7 +14,13 @@ import Eventos from '../pages/pagEventos'
 import Carrito from '../pages/Carrito'
 import ProveedorProducto from '../context/ProveedorProducto.jsx'
 import ProveedorCarrito from '../context/ProveedorCarrito'
-import Articulos from '../pages/Detalle'
+import Articulos from '../Details/DetalleBebida'
+import Articulos2 from '../Details/DetalleCarniceria'
+import Articulos3 from '../Details/DetalleAlmacen'
+import Articulos4 from '../Details/DetalleComida'
+import Articulos5 from '../Details/DetalleFruteria'
+import Articulos6 from '../Details/DetalleLimpieza'
+
 
 
 
@@ -39,7 +45,12 @@ const rutas = () => {
             <Route path='/contacto' element={<Contacto />} />
             <Route path='/eventos' element={<Eventos />} />
             <Route path='/carrito' element={<Carrito/>} />
-            <Route path='/articulo' element={<Articulos/>}/>
+            <Route path='/bebida/:Codigo' element={<Articulos/>}/>
+            <Route path='/carniceria/:Codigo' element={<Articulos2/>}/>
+            <Route path='/almacen/:Codigo' element={<Articulos3/>}/>
+            <Route path='/comida/:Codigo' element={<Articulos4/>}/>
+            <Route path='/fruteria/:Codigo' element={<Articulos5/>}/>
+            <Route path='/limpieza/:Codigo' element={<Articulos6/>}/>
 
 
           </Routes>

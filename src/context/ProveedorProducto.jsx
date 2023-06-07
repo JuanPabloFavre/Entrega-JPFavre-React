@@ -86,579 +86,724 @@ export const ProductoContext = createContext("")
 
 
 
-const ProveedorProducto = ({children}) => {
-
-  const almacen = [
-    {
-      Nombre: 'Aceite',
-      Imagen: aceite,
-      Detalle: 'Precio por unidad',
-      Precio: 150
-  },
-
-  {
-      Nombre: 'Vinagre',
-      Imagen: vinagre,
-      Detalle: 'Precio por unidad',
-      Precio: 125
-
-  },
-
-  {
-      Nombre: 'Arroz',
-      Imagen: arroz,
-      Detalle: 'Precio por unidad',
-      Precio: 32
-  },
-
-  {
-      Nombre: 'Azucar',
-      Imagen: azucar,
-      Detalle: 'Precio por unidad',
-      Precio: 60
-
-  },
-
-  {
-      Nombre: 'Fideos',
-      Imagen: fideos,
-      Detalle: 'Precio por unidad',
-      Precio: 50
-  },
-
-  {
-      Nombre: 'Harina',
-      Imagen: harina,
-      Detalle: 'Precio por unidad',
-      Precio: 45
-
-  },
-
-  {
-      Nombre: 'Ketchup',
-      Imagen: ketchup,
-      Detalle: 'Precio por unidad',
-      Precio: 50
-  },
-
-  {
-      Nombre: 'Mayonesa',
-      Imagen: mayonesa,
-      Detalle: 'Precio por unidad',
-      Precio: 45
-
-  },
-
-  {
-      Nombre: 'Moñas',
-      Imagen: monas,
-      Detalle: 'Precio por unidad',
-      Precio: 50
-  },
-
-  {
-      Nombre: 'Mostaza',
-      Imagen: mostaza,
-      Detalle: 'Precio por unidad',
-      Precio: 45
-
-  },
-
-  {
-      Nombre: 'Aceite de Oliva',
-      Imagen: oliva,
-      Detalle: 'Precio por unidad',
-      Precio: 50
-  },
-
-  {
-      Nombre: 'Sal fina',
-      Imagen: sal,
-      Detalle: 'Precio por unidad',
-      Precio: 45
-
-  },
-  ]
-
-  const bebida = [
-
-
-    {
-        Nombre: 'Coca Cola',
-        Imagen: coca,
-        Detalle: 'Precio por unidad',
-        Precio: 150
-    },
-
-    {
-        Nombre: 'Fanta',
-        Imagen: fanta,
-        Detalle: 'Precio por unidad',
-        Precio: 125
-
-    },
-
-    {
-        Nombre: 'Sprite',
-        Imagen: sprite,
-        Detalle: 'Precio por unidad',
-        Precio: 32
-    },
-
-    {
-        Nombre: 'BC',
-        Imagen: bc,
-        Detalle: 'Precio por unidad',
-        Precio: 60
-
-    },
-
-    {
-        Nombre: 'Ades',
-        Imagen: ades,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Baggio',
-        Imagen: baggio,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Citric',
-        Imagen: citric,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Dairyco',
-        Imagen: dairyco,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Pepsi',
-        Imagen: pepsi,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Tonida',
-        Imagen: tonica,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Watts',
-        Imagen: watts,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Pomelo',
-        Imagen: pomelo,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-
-
-]
-
-
-const carniceria = [
-    {
-        Nombre: 'Carne Picada',
-        Imagen: picada,
-        Detalle: 'Precio por Kg',
-        Precio: 350
-
-    },
-
-    {
-        Nombre: 'Vacio',
-        Imagen: vacio,
-        Detalle: 'Precio por Kg',
-        Precio: 562
-
-    },
-
-    {
-        Nombre: 'Asado de Tira',
-        Imagen: asado,
-        Detalle: 'Precio por Kg',
-        Precio: 456
-
-    },
-
-    {
-        Nombre: 'Picaña de Exportacion',
-        Imagen: picana,
-        Detalle: 'Precio por Kg',
-        Precio: 690
-
-    },
-    {
-        Nombre: 'Matambre de Cerdo',
-        Imagen: matambre,
-        Detalle: 'Precio por Kg',
-        Precio: 500
-
-    },
-
-    {
-        Nombre: 'Chorizo Mezcla',
-        Imagen: chorizo,
-        Detalle: 'Precio por Kg',
-        Precio: 390
-
-    },
-    {
-        Nombre: 'Entraña',
-        Imagen: entrana,
-        Detalle: 'Precio por Kg',
-        Precio: 550
-
-    },
-
-    {
-        Nombre: 'Hamburguesa',
-        Imagen: hamburguesa,
-        Detalle: 'Precio por Uni',
-        Precio: 62
-
-    },
-
-    {
-        Nombre: 'Ojo de Bife',
-        Imagen: ojodebife,
-        Detalle: 'Precio por Kg',
-        Precio: 856
-
-    },
-
-    {
-        Nombre: 'Rack de Cordero',
-        Imagen: rack,
-        Detalle: 'Precio por Kg',
-        Precio: 990
-
-    },
-    {
-        Nombre: 'Solomillo',
-        Imagen: solomillo,
-        Detalle: 'Precio por Kg',
-        Precio: 800
-
-    },
-
-    {
-        Nombre: 'Tomahawk',
-        Imagen: tomahawk,
-        Detalle: 'Precio por Kg',
-        Precio: 890
-
-    }
-
-
-]
-
-
-const comida = [
-
-
-    {
-        Nombre: 'Hamburguesa 1',
-        Imagen: hambur1,
-        Detalle: 'Precio por unidad',
-        Precio: 150
-    },
-
-    {
-        Nombre: 'Hamburguesa 2',
-        Imagen: hambur2,
-        Detalle: 'Precio por unidad',
-        Precio: 125
-
-    },
-
-    {
-        Nombre: 'Promo Hamburguesa',
-        Imagen: promo1,
-        Detalle: 'Precio por unidad',
-        Precio: 32
-    },
-
-    {
-        Nombre: 'Combo 2x1 Hamburguesa',
-        Imagen: combo2,
-        Detalle: 'Precio por unidad',
-        Precio: 60
-
-    },
-
-    {
-        Nombre: 'Lehmeyum',
-        Imagen: Lehmeyun,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Chivito al Pan',
-        Imagen: chivitoalpan,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Chivito al Plato',
-        Imagen: chivitoalplato,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Chorizo al Pan',
-        Imagen: chorialpan,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Pizza Familiar',
-        Imagen: pizza,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Quesadillas',
-        Imagen: quesadillas,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Tacos de Carne',
-        Imagen: tacosCarne,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Panchos con Muzza',
-        Imagen: panchos,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-
-
-
-
-]
-
-
-const fruteria = [
-
-
-    {
-        Nombre: 'Banana',
-        Imagen: banana,
-        Detalle: 'Precio por unidad',
-        Precio: 150
-    },
-
-    {
-        Nombre: 'Cebolla',
-        Imagen: cebolla,
-        Detalle: 'Precio por unidad',
-        Precio: 125
-
-    },
-
-    {
-        Nombre: 'Frutilla',
-        Imagen: frutilla,
-        Detalle: 'Precio por unidad',
-        Precio: 32
-    },
-
-    {
-        Nombre: 'Kiwi',
-        Imagen: kiwi,
-        Detalle: 'Precio por unidad',
-        Precio: 60
-
-    },
-
-    {
-        Nombre: 'Lechuga',
-        Imagen: lechuga,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Mandarina',
-        Imagen: mandarina,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Manzana',
-        Imagen: manzana,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Morron Rojo',
-        Imagen: morronr,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Morron Verde',
-        Imagen: morronv,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Naranja',
-        Imagen: naranja,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-    {
-        Nombre: 'Tomate',
-        Imagen: tomate,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-
-    {
-        Nombre: 'Zanahoria',
-        Imagen: zanahoria,
-        Detalle: 'Precio por unidad',
-        Precio: 45
-
-    },
-
-
-
-
-
-]
-
-
-const limpieza = [
-
-    {
-        Nombre: 'Esponja',
-        Imagen: esponja,
-        Detalle: 'Precio por unidad',
-        Precio: 15
-    },
-    {
-        Nombre: 'Lavandina',
-        Imagen: aguajane,
-        Detalle: 'Precio por unidad',
-        Precio: 50
-    },
-    {
-        Nombre: 'Bolsas para Residuos',
-        Imagen: bolsaresiduos,
-        Detalle: 'Precio por pack de 6',
-        Precio: 15
-    },
-    {
-        Nombre: 'Cif Crema',
-        Imagen: cifcrema,
-        Detalle: 'Precio por unidad',
-        Precio: 90
-    },
-    {
-        Nombre: 'Cif Limpia Vidrios',
-        Imagen: cifvidrios,
-        Detalle: 'Precio por unidad',
-        Precio: 10
-    },
-    {
-        Nombre: 'Escoba',
-        Imagen: escoba,
-        Detalle: 'Precio por unidad',
-        Precio: 35
-    },
-    {
-        Nombre: 'Escobilla',
-        Imagen: escobilla,
-        Detalle: 'Precio por unidad',
-        Precio: 65
-    },
-    {
-        Nombre: 'Limpiador',
-        Imagen: limpiador,
-        Detalle: 'Precio por unidad',
-        Precio: 115
-    },
-    {
-        Nombre: 'Pala',
-        Imagen: pala,
-        Detalle: 'Precio por unidad',
-        Precio: 85
-    },
-    {
-        Nombre: 'Pañales',
-        Imagen: panales,
-        Detalle: 'Precio por unidad',
-        Precio: 315
-    },
-    {
-        Nombre: 'Papel de Cocina',
-        Imagen: papelcocina,
-        Detalle: 'Precio por unidad',
-        Precio: 145
-    },
-    {
-        Nombre: 'Papel Higienico',
-        Imagen: papelhigienico,
-        Detalle: 'Precio por unidad',
-        Precio: 185
-    }
-]
-
-
-
-  return (
-    <ProductoContext.Provider value={{almacen,bebida,carniceria, comida,fruteria, limpieza}}>
-      {children}
-    </ProductoContext.Provider>
-  )
+const ProveedorProducto = ({ children }) => {
+
+    
+    const almacen = [
+        {
+            Codigo: 'AL1',
+            Categoria:'almacen',
+            Nombre: 'Aceite',
+            Imagen: aceite,
+            Detalle: 'Precio por unidad',
+            Precio: 150
+        },
+
+        {
+            Codigo: 'AL2',
+            Categoria:'almacen',
+            Nombre: 'Vinagre',
+            Imagen: vinagre,
+            Detalle: 'Precio por unidad',
+            Precio: 125
+
+        },
+
+        {
+            Codigo: 'AL3',
+            Categoria:'almacen',
+            Nombre: 'Arroz',
+            Imagen: arroz,
+            Detalle: 'Precio por unidad',
+            Precio: 32
+        },
+
+        {
+            Codigo: 'AL4',
+            Categoria:'almacen',
+            Nombre: 'Azucar',
+            Imagen: azucar,
+            Detalle: 'Precio por unidad',
+            Precio: 60
+
+        },
+
+        {
+            Codigo: 'AL5',
+            Categoria:'almacen',
+            Nombre: 'Fideos',
+            Imagen: fideos,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'AL6',
+            Categoria:'almacen',
+            Nombre: 'Harina',
+            Imagen: harina,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'AL7',
+            Categoria:'almacen',
+            Nombre: 'Ketchup',
+            Imagen: ketchup,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'AL8',
+            Categoria:'almacen',
+            Nombre: 'Mayonesa',
+            Imagen: mayonesa,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'AL9',
+            Categoria:'almacen',
+            Nombre: 'Moñas',
+            Imagen: monas,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'AL10',
+            Categoria:'almacen',
+            Nombre: 'Mostaza',
+            Imagen: mostaza,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'AL11',
+            Categoria:'almacen',
+            Nombre: 'Aceite de Oliva',
+            Imagen: oliva,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'AL12',
+            Categoria:'almacen',
+            Nombre: 'Sal fina',
+            Imagen: sal,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+    ]
+
+    const bebida = [
+
+
+        {
+            Codigo: 'B1',
+            Categoria:'bebida',
+            Nombre: 'Coca Cola',
+            Imagen: coca,
+            Detalle: 'Precio por unidad',
+            Precio: 150
+        },
+
+        {
+            Codigo: 'B2',
+            Categoria:'bebida',
+            Nombre: 'Fanta',
+            Imagen: fanta,
+            Detalle: 'Precio por unidad',
+            Precio: 125
+
+        },
+
+        {
+            Codigo: 'B3',
+            Categoria:'bebida',
+            Nombre: 'Sprite',
+            Imagen: sprite,
+            Detalle: 'Precio por unidad',
+            Precio: 32
+        },
+
+        {
+            Codigo: 'B4',
+            Categoria:'bebida',
+            Nombre: 'BC',
+            Imagen: bc,
+            Detalle: 'Precio por unidad',
+            Precio: 60
+
+        },
+
+        {
+            Codigo: 'B5',
+            Categoria:'bebida',
+            Nombre: 'Ades',
+            Imagen: ades,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'B6',
+            Categoria:'bebida',
+            Nombre: 'Baggio',
+            Imagen: baggio,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'B7',
+            Categoria:'bebida',
+            Nombre: 'Citric',
+            Imagen: citric,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'B8',
+            Categoria:'bebida',
+            Nombre: 'Dairyco',
+            Imagen: dairyco,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'B9',
+            Categoria:'bebida',
+            Nombre: 'Pepsi',
+            Imagen: pepsi,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'B10',
+            Categoria:'bebida',
+            Nombre: 'Tonida',
+            Imagen: tonica,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'B11',
+            Categoria:'bebida',
+            Nombre: 'Watts',
+            Imagen: watts,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'B12',
+            Categoria:'bebida',
+            Nombre: 'Pomelo',
+            Imagen: pomelo,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+
+
+    ]
+
+
+    const carniceria = [
+        {
+            Codigo: 'CA1',
+            Categoria:'carniceria',
+            Nombre: 'Carne Picada',
+            Imagen: picada,
+            Detalle: 'Precio por Kg',
+            Precio: 350
+
+        },
+
+        {
+            Codigo: 'CA2',
+            Categoria:'carniceria',
+            Nombre: 'Vacio',
+            Imagen: vacio,
+            Detalle: 'Precio por Kg',
+            Precio: 562
+
+        },
+
+        {
+            Codigo: 'CA3',
+            Categoria:'carniceria',
+            Nombre: 'Asado de Tira',
+            Imagen: asado,
+            Detalle: 'Precio por Kg',
+            Precio: 456
+
+        },
+
+        {
+            Codigo: 'CA4',
+            Categoria:'carniceria',
+            Nombre: 'Picaña de Exportacion',
+            Imagen: picana,
+            Detalle: 'Precio por Kg',
+            Precio: 690
+
+        },
+        {
+            Codigo: 'CA5',
+            Categoria:'carniceria',
+            Nombre: 'Matambre de Cerdo',
+            Imagen: matambre,
+            Detalle: 'Precio por Kg',
+            Precio: 500
+
+        },
+
+        {
+            Codigo: 'CA6',
+            Categoria:'carniceria',
+            Nombre: 'Chorizo Mezcla',
+            Imagen: chorizo,
+            Detalle: 'Precio por Kg',
+            Precio: 390
+
+        },
+        {
+            Codigo: 'CA7',
+            Categoria:'carniceria',
+            Nombre: 'Entraña',
+            Imagen: entrana,
+            Detalle: 'Precio por Kg',
+            Precio: 550
+
+        },
+
+        {
+            Codigo: 'CA8',
+            Categoria:'carniceria',
+            Nombre: 'Hamburguesa',
+            Imagen: hamburguesa,
+            Detalle: 'Precio por Uni',
+            Precio: 62
+
+        },
+
+        {
+            Codigo: 'CA9',
+            Categoria:'carniceria',
+            Nombre: 'Ojo de Bife',
+            Imagen: ojodebife,
+            Detalle: 'Precio por Kg',
+            Precio: 856
+
+        },
+
+        {
+            Codigo: 'CA10',
+            Categoria:'carniceria',
+            Nombre: 'Rack de Cordero',
+            Imagen: rack,
+            Detalle: 'Precio por Kg',
+            Precio: 990
+
+        },
+        {
+            Codigo: 'CA11',
+            Categoria:'carniceria',
+            Nombre: 'Solomillo',
+            Imagen: solomillo,
+            Detalle: 'Precio por Kg',
+            Precio: 800
+
+        },
+
+        {
+            Codigo: 'CA12',
+            Categoria:'carniceria',
+            Nombre: 'Tomahawk',
+            Imagen: tomahawk,
+            Detalle: 'Precio por Kg',
+            Precio: 890
+
+        }
+
+
+    ]
+
+
+    const comida = [
+
+
+        {
+            Codigo: 'CO1',
+            Categoria:'comida',
+            Nombre: 'Hamburguesa 1',
+            Imagen: hambur1,
+            Detalle: 'Precio por unidad',
+            Precio: 150
+        },
+
+        {
+            Codigo: 'CO2',
+            Categoria:'comida',
+            Nombre: 'Hamburguesa 2',
+            Imagen: hambur2,
+            Detalle: 'Precio por unidad',
+            Precio: 125
+
+        },
+
+        {
+            Codigo: 'CO3',
+            Categoria:'comida',
+            Nombre: 'Promo Hamburguesa',
+            Imagen: promo1,
+            Detalle: 'Precio por unidad',
+            Precio: 32
+        },
+
+        {
+            Codigo: 'CO4',
+            Categoria:'comida',
+            Nombre: 'Combo 2x1 Hamburguesa',
+            Imagen: combo2,
+            Detalle: 'Precio por unidad',
+            Precio: 60
+
+        },
+
+        {
+            Codigo: 'CO5',
+            Categoria:'comida',
+            Nombre: 'Lehmeyum',
+            Imagen: Lehmeyun,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'CO6',
+            Categoria:'comida',
+            Nombre: 'Chivito al Pan',
+            Imagen: chivitoalpan,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'CO7',
+            Categoria:'comida',
+            Nombre: 'Chivito al Plato',
+            Imagen: chivitoalplato,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'CO8',
+            Categoria:'comida',
+            Nombre: 'Chorizo al Pan',
+            Imagen: chorialpan,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'CO9',
+            Categoria:'comida',
+            Nombre: 'Pizza Familiar',
+            Imagen: pizza,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'CO10',
+            Categoria:'comida',
+            Nombre: 'Quesadillas',
+            Imagen: quesadillas,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'CO11',
+            Categoria:'comida',
+            Nombre: 'Tacos de Carne',
+            Imagen: tacosCarne,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'CO12',
+            Categoria:'comida',
+            Nombre: 'Panchos con Muzza',
+            Imagen: panchos,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+
+
+
+
+    ]
+
+
+    const fruteria = [
+
+
+        {
+            Codigo: 'FR1',
+            Categoria:'fruteria',
+            Nombre: 'Banana',
+            Imagen: banana,
+            Detalle: 'Precio por unidad',
+            Precio: 150
+        },
+
+        {
+            Codigo: 'FR2',
+            Categoria:'fruteria',
+            Nombre: 'Cebolla',
+            Imagen: cebolla,
+            Detalle: 'Precio por unidad',
+            Precio: 125
+
+        },
+
+        {
+            Codigo: 'FR3',
+            Categoria:'fruteria',
+            Nombre: 'Frutilla',
+            Imagen: frutilla,
+            Detalle: 'Precio por unidad',
+            Precio: 32
+        },
+
+        {
+            Codigo: 'FR4',
+            Categoria:'fruteria',
+            Nombre: 'Kiwi',
+            Imagen: kiwi,
+            Detalle: 'Precio por unidad',
+            Precio: 60
+
+        },
+
+        {
+            Codigo: 'FR5',
+            Categoria:'fruteria',
+            Nombre: 'Lechuga',
+            Imagen: lechuga,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'FR6',
+            Categoria:'fruteria',
+            Nombre: 'Mandarina',
+            Imagen: mandarina,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'FR7',
+            Categoria:'fruteria',
+            Nombre: 'Manzana',
+            Imagen: manzana,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'FR8',
+            Categoria:'fruteria',
+            Nombre: 'Morron Rojo',
+            Imagen: morronr,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'FR9',
+            Categoria:'fruteria',
+            Nombre: 'Morron Verde',
+            Imagen: morronv,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'FR10',
+            Categoria:'fruteria',
+            Nombre: 'Naranja',
+            Imagen: naranja,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+        {
+            Codigo: 'FR11',
+            Categoria:'fruteria',
+            Nombre: 'Tomate',
+            Imagen: tomate,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+
+        {
+            Codigo: 'FR12',
+            Categoria:'fruteria',
+            Nombre: 'Zanahoria',
+            Imagen: zanahoria,
+            Detalle: 'Precio por unidad',
+            Precio: 45
+
+        },
+
+
+
+
+
+    ]
+
+
+    const limpieza = [
+
+        {
+            Codigo: 'LI1',
+            Categoria:'limpieza',
+            Nombre: 'Esponja',
+            Imagen: esponja,
+            Detalle: 'Precio por unidad',
+            Precio: 15
+        },
+        {
+            Codigo: 'LI2',
+            Categoria:'limpieza',
+            Nombre: 'Lavandina',
+            Imagen: aguajane,
+            Detalle: 'Precio por unidad',
+            Precio: 50
+        },
+        {
+            Codigo: 'LI3',
+            Categoria:'limpieza',
+            Nombre: 'Bolsas para Residuos',
+            Imagen: bolsaresiduos,
+            Detalle: 'Precio por pack de 6',
+            Precio: 15
+        },
+        {
+            Codigo: 'LI4',
+            Categoria:'limpieza',
+            Nombre: 'Cif Crema',
+            Imagen: cifcrema,
+            Detalle: 'Precio por unidad',
+            Precio: 90
+        },
+        {
+            Codigo: 'LI5',
+            Categoria:'limpieza',
+            Nombre: 'Cif Limpia Vidrios',
+            Imagen: cifvidrios,
+            Detalle: 'Precio por unidad',
+            Precio: 10
+        },
+        {
+            Codigo: 'LI6',
+            Categoria:'limpieza',
+            Nombre: 'Escoba',
+            Imagen: escoba,
+            Detalle: 'Precio por unidad',
+            Precio: 35
+        },
+        {
+            Codigo: 'LI7',
+            Categoria:'limpieza',
+            Nombre: 'Escobilla',
+            Imagen: escobilla,
+            Detalle: 'Precio por unidad',
+            Precio: 65
+        },
+        {
+            Codigo: 'LI8',
+            Categoria:'limpieza',
+            Nombre: 'Limpiador',
+            Imagen: limpiador,
+            Detalle: 'Precio por unidad',
+            Precio: 115
+        },
+        {
+            Codigo: 'LI9',
+            Categoria:'limpieza',
+            Nombre: 'Pala',
+            Imagen: pala,
+            Detalle: 'Precio por unidad',
+            Precio: 85
+        },
+        {
+            Codigo: 'LI10',
+            Categoria:'limpieza',
+            Nombre: 'Pañales',
+            Imagen: panales,
+            Detalle: 'Precio por unidad',
+            Precio: 315
+        },
+        {
+            Codigo: 'LI11',
+            Categoria:'limpieza',
+            Nombre: 'Papel de Cocina',
+            Imagen: papelcocina,
+            Detalle: 'Precio por unidad',
+            Precio: 145
+        },
+        {
+            Codigo: 'LI12',
+            Categoria:'limpieza',
+            Nombre: 'Papel Higienico',
+            Imagen: papelhigienico,
+            Detalle: 'Precio por unidad',
+            Precio: 185
+        }
+    ]
+
+
+
+    return (
+        <ProductoContext.Provider value={{ almacen, bebida, carniceria, comida, fruteria, limpieza }}>
+            {children}
+        </ProductoContext.Provider>
+    )
 }
 
 export default ProveedorProducto

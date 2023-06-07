@@ -13,7 +13,7 @@ const Carrito = () => {
     const { carrito } = useContext(CarritoContext)
 
     const subTotal = carrito.reduce((prev,curr)=>prev + (curr.Precio * curr.Contador),0)
-    const impuestos = (subTotal *  0.22)
+    const impuestos = (subTotal *  0.30)
     const total = subTotal+impuestos
     return (
         <div className='container '>
