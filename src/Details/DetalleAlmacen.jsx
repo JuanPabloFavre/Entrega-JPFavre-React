@@ -16,13 +16,13 @@ const DetalleAlmacen = () => {
     const {Codigo} = useParams()
     
     const [articulo, setArticulo] = useState({})
-    const {fruteria} = useContext(ProductoContext)
+    const {almacen} = useContext(ProductoContext)
  
     
 
     useEffect(() => {
 
-        const filter = fruteria.find((articulo)=> articulo.Codigo === Codigo) 
+        const filter = almacen.find((articulo)=> articulo.Codigo === Codigo) 
         
         setArticulo(filter)
     }, [])

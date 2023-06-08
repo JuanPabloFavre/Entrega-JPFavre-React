@@ -220,3 +220,60 @@ font-size: 1.5rem;
         
     }
 
+
+    @media (max-width: 1080px) {
+
+        .articulosInicio{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-content: center;
+            justify-items: center;
+            gap: 10px; 
+                          
+        }
+
+        .articulosInicio img{
+            width: 300px;
+        }
+        .articulosInicio div{
+            width: 200px;
+        }
+
+        .articulosInicio p{
+            font-size: 1rem;
+        }
+
+
+        .articulos{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-content: center;
+            justify-items: center;
+            gap: 50px; 
+            
+                  
+        }
+
+        .articulos img{
+            width: 300px;
+        }
+       
+
+        .articulos p{
+            font-size: 1rem;
+        }
+
+        
+        .articulos-carrito{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-content: center;
+            justify-items: center;
+            gap: 30px; 
+           
+            
+        }
+
+       
+    }
+

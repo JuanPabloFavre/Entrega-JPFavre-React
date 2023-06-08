@@ -11,9 +11,9 @@ import Compra from '../components/Form'
 const Carrito = () => {
     
     const { carrito } = useContext(CarritoContext)
-
+    
     const subTotal = carrito.reduce((prev,curr)=>prev + (curr.Precio * curr.Contador),0)
-    const impuestos = (subTotal *  0.30)
+    const impuestos = Math.round(subTotal *  0.22)
     const total = subTotal+impuestos
     return (
         <div className='container '>
@@ -22,6 +22,7 @@ const Carrito = () => {
             <h1 className='titulo'>Carrito</h1>
           <div className='articulos-carrito'> {carrito.map((item) => (
                 <Articulos inCarrito key={item.Precio}{...item} />
+                
             ))}
             
             </div>

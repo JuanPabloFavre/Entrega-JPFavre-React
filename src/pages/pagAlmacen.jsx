@@ -18,7 +18,6 @@ const pagAlmacen = () => {
         <Banner />
         <Container/>
         <h1 className='titulo'>Almacen</h1>
-        
         <Almacen/>
         <Footer items={[<ion-icon name="logo-facebook"></ion-icon>, <ion-icon name="logo-twitter"></ion-icon>, <ion-icon name="logo-instagram"></ion-icon>]}/>      
     </div>

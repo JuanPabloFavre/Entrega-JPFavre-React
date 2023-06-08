@@ -24,6 +24,8 @@ const Form = (props) => {
 
     const validar = (c) => {
         const { name, value } = c.target
+
+               
         setValidarForm({
             ...validarForm,
             buyer: {
@@ -32,6 +34,7 @@ const Form = (props) => {
             }
 
         })
+    
     }
 
     const mostrarAlerta = () => {

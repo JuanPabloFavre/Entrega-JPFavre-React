@@ -6,7 +6,11 @@ export const CarritoContext = createContext("");
 
 const ProveedorCarrito = ({ children }) => {
 
+
   const [carrito, setcarrito] = useState([])
+
+
+
   const addCarrito = (item) => setcarrito([...carrito,item])
 
   return (
