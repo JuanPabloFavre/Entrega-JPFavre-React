@@ -5,7 +5,13 @@ import Logo from '../components/Logo'
 import Container from '../Layout/Container'
 import Footer from '../components/Footer/FooterBar'
 import Banner from '../components/Bootstrap/banner'
-import Formulario from '../components/Bootstrap/formulario'
+import Formulario from '../components/formulario'
+
+
+
+
+
+
 
 const pagContacto = () => {
     return (

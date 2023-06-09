@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { db } from '../firebase.config'
 import { addDoc, collection } from 'firebase/firestore';
 import Swal from 'sweetalert2'
@@ -37,14 +37,23 @@ const Form = (props) => {
     
     }
 
-    const mostrarAlerta = () => {
-        Swal.fire(
-            'Compra Confirmada!',
-            'Bien hecho',
-            navigate('/'),
-            window.location.replace('/')
-
-        )
+const mostrarAlerta = () => {
+    
+    Swal.fire({
+        title: '¿Quieres confirmar la compra?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar',
+        denyButtonText: `Seguir Comprando`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire('Compra Confirmada!')
+          navigate('/')  
+        } else if (result.isDenied) {
+            navigate(-1)
+        }
+      })
+     
     }
 
 
@@ -65,19 +74,19 @@ const Form = (props) => {
             <form onSubmit={confirmarCompra} action="">
 
                 <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Nombre</label>
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>
                     <input onChange={validar} type="text" name='nombre' className="form-control" id="exampleFormControlInput1"  />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Apellidos</label>
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Apellidos</label>
                     <input onChange={validar} type="text" name='apellido' className="form-control" id="exampleFormControlInput1" />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Correo electronico</label>
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Correo electronico</label>
                     <input onChange={validar} type="email" name='email' className="form-control" id="exampleFormControlInput1"  />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Telefono</label>
+                    <label htmlFor="exampleFormControlInput1" className="form-label">Telefono</label>
                     <input onChange={validar} type="number" name='telefono' className="form-control" id="exampleFormControlInput1" />
                 </div>
                 <div className="mb-3">
