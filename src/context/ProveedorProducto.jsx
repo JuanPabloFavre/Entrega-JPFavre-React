@@ -96,7 +96,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Aceite',
             Imagen: aceite,
             Detalle: 'Precio por unidad',
-            Precio: 150
+            Precio: 150,
+            Adicional: 'Aceite Optimo de 1lt, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -105,7 +106,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Vinagre',
             Imagen: vinagre,
             Detalle: 'Precio por unidad',
-            Precio: 125
+            Precio: 125,
+            Adicional: 'Vinagre Gamberoni de 0.7lt, disruta cocinar con la mejor calidad'
 
         },
 
@@ -115,7 +117,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Arroz',
             Imagen: arroz,
             Detalle: 'Precio por unidad',
-            Precio: 32
+            Precio: 32,
+            Adicional: 'Arroz Chef de 1Kg, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -124,7 +127,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Azucar',
             Imagen: azucar,
             Detalle: 'Precio por unidad',
-            Precio: 60
+            Precio: 60,
+            Adicional:  'Azucar Bella Union de 1Kg, disruta cocinar con la mejor calidad'
 
         },
 
@@ -134,7 +138,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Fideos',
             Imagen: fideos,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional:  'Fideos Adria de 1Kg, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -143,7 +148,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Harina',
             Imagen: harina,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional:  'Harina 0000 Cololo de 1Kg, disruta cocinar con la mejor calidad'
 
         },
 
@@ -153,7 +159,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Ketchup',
             Imagen: ketchup,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional:  'Ketchup Hellmanns de 0.5Kg, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -162,7 +169,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Mayonesa',
             Imagen: mayonesa,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional:  'Mayonesa Hellmanns de 0.5Kg, disruta cocinar con la mejor calidad'
 
         },
 
@@ -172,7 +180,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Moñas',
             Imagen: monas,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional:  'Moñas Adria de 1Kg, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -181,7 +190,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Mostaza',
             Imagen: mostaza,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Mostaza Savora de 0.5Kg, disruta cocinar con la mejor calidad'
 
         },
 
@@ -191,7 +201,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Aceite de Oliva',
             Imagen: oliva,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Aceite de Oliva Olivares de 0.7lt, disruta cocinar con la mejor calidad'
         },
 
         {
@@ -200,7 +211,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Sal fina',
             Imagen: sal,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Sal fina Dos Anclas de 0.5Kg, disruta cocinar con la mejor calidad'
 
         },
     ]
@@ -214,7 +226,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Coca Cola',
             Imagen: coca,
             Detalle: 'Precio por unidad',
-            Precio: 150
+            Precio: 150,
+            Adicional: 'Refresco COCA COLA 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
 
         {
@@ -223,7 +236,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Fanta',
             Imagen: fanta,
             Detalle: 'Precio por unidad',
-            Precio: 125
+            Precio: 125,
+            Adicional: 'Refresco FANTA 1.5 Litros Descartable, disfruta el refrescante sabor'
 
         },
 
@@ -233,7 +247,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Sprite',
             Imagen: sprite,
             Detalle: 'Precio por unidad',
-            Precio: 32
+            Precio: 32,
+            Adicional: 'Refresco SPRITE 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
 
         {
@@ -242,7 +257,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'BC',
             Imagen: bc,
             Detalle: 'Precio por unidad',
-            Precio: 60
+            Precio: 60,
+            Adicional: 'Refresco BC 1 Litros en caja, disfruta el refrescante sabor'
 
         },
 
@@ -252,7 +268,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Ades',
             Imagen: ades,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Refresco ADES 1 Litros en caja, disfruta el refrescante sabor'
         },
 
         {
@@ -261,7 +278,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Baggio',
             Imagen: baggio,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Refresco BAGGIO 1 Litros en caja, disfruta el refrescante sabor'
 
         },
 
@@ -271,7 +289,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Citric',
             Imagen: citric,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Refresco CITRIC 1 Litros en caja, disfruta el refrescante sabor'
         },
 
         {
@@ -280,7 +299,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Dairyco',
             Imagen: dairyco,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Refresco DAIRYCO 1 Litros en caja, disfruta el refrescante sabor'
 
         },
 
@@ -290,7 +310,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Pepsi',
             Imagen: pepsi,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Refresco PEPSI 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
 
         {
@@ -299,7 +320,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Tonida',
             Imagen: tonica,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Refresco TONICA 1.5 Litros Descartable, disfruta el refrescante sabor'
 
         },
 
@@ -309,7 +331,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Watts',
             Imagen: watts,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Refresco WATTS 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
 
         {
@@ -318,7 +341,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Pomelo',
             Imagen: pomelo,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
 
         },
 
@@ -334,7 +358,9 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Carne Picada',
             Imagen: picada,
             Detalle: 'Precio por Kg',
-            Precio: 350
+            Precio: 350,
+            Adicional: 'Carne picada de frigorifico El Emporio, certificado Angus de calidad Premium'
+            
 
         },
 
@@ -344,7 +370,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Vacio',
             Imagen: vacio,
             Detalle: 'Precio por Kg',
-            Precio: 562
+            Precio: 562,
+            Adicional:'Vacio de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -354,7 +381,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Asado de Tira',
             Imagen: asado,
             Detalle: 'Precio por Kg',
-            Precio: 456
+            Precio: 456,
+            Adicional: 'Asado de tira de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -364,7 +392,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Picaña de Exportacion',
             Imagen: picana,
             Detalle: 'Precio por Kg',
-            Precio: 690
+            Precio: 690,
+            Adicional: 'Picaña de exportacion de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
         {
@@ -373,7 +402,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Matambre de Cerdo',
             Imagen: matambre,
             Detalle: 'Precio por Kg',
-            Precio: 500
+            Precio: 500,
+            Adicional: 'Matambre de cerdo de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -383,7 +413,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Chorizo Mezcla',
             Imagen: chorizo,
             Detalle: 'Precio por Kg',
-            Precio: 390
+            Precio: 390,
+            Adicional: 'Chorizo Mezcla de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
         {
@@ -392,7 +423,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Entraña',
             Imagen: entrana,
             Detalle: 'Precio por Kg',
-            Precio: 550
+            Precio: 550,
+            Adicional: 'Entraña de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -402,7 +434,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Hamburguesa',
             Imagen: hamburguesa,
             Detalle: 'Precio por Uni',
-            Precio: 62
+            Precio: 62,
+            Adicional: 'Hamburguesas de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -412,7 +445,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Ojo de Bife',
             Imagen: ojodebife,
             Detalle: 'Precio por Kg',
-            Precio: 856
+            Precio: 856,
+            Adicional: 'Ojo de Bife de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -422,7 +456,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Rack de Cordero',
             Imagen: rack,
             Detalle: 'Precio por Kg',
-            Precio: 990
+            Precio: 990,
+            Adicional: 'Rack de Cordero de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
         {
@@ -431,7 +466,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Solomillo',
             Imagen: solomillo,
             Detalle: 'Precio por Kg',
-            Precio: 800
+            Precio: 800,
+            Adicional: 'Solomillo de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         },
 
@@ -441,7 +477,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Tomahawk',
             Imagen: tomahawk,
             Detalle: 'Precio por Kg',
-            Precio: 890
+            Precio: 890,
+            Adicional: 'Tomahawk de frigorifico El Emporio, certificado Angus de calidad Premium'
 
         }
 
@@ -458,7 +495,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Hamburguesa 1',
             Imagen: hambur1,
             Detalle: 'Precio por unidad',
-            Precio: 150
+            Precio: 150,
+            Adicional: 'Doble hamburguesa con tomate, lechuga pepinillos y cebolla. No podes no probarla'
         },
 
         {
@@ -467,7 +505,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Hamburguesa 2',
             Imagen: hambur2,
             Detalle: 'Precio por unidad',
-            Precio: 125
+            Precio: 125,
+            Adicional: 'Gran hamburguesa con lechuga, queso chedar y morron. No podes no probarla'
 
         },
 
@@ -477,7 +516,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Promo Hamburguesa',
             Imagen: promo1,
             Detalle: 'Precio por unidad',
-            Precio: 32
+            Precio: 32,
+            Adicional: 'Super promo, dos hamburguesas con lechuga, huevo frito y morron. No podes no probarla'
         },
 
         {
@@ -486,7 +526,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Combo 2x1 Hamburguesa',
             Imagen: combo2,
             Detalle: 'Precio por unidad',
-            Precio: 60
+            Precio: 60,
+            Adicional: 'Hamburguesa con lechuga, queso chedar y tomate, mas una porcion de papas. No podes no probarla'
 
         },
 
@@ -496,7 +537,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Lehmeyum',
             Imagen: Lehmeyun,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Los mejores lehmeyum, con una receta unita, No podes no probarlo'
         },
 
         {
@@ -505,8 +547,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Chivito al Pan',
             Imagen: chivitoalpan,
             Detalle: 'Precio por unidad',
-            Precio: 45
-
+            Precio: 45,
+            Adicional: 'Chivito Uruguayo, super completo y el mas rico, No podes no probarlo'
         },
 
         {
@@ -515,7 +557,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Chivito al Plato',
             Imagen: chivitoalplato,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Chivito Uruguayo al plato, super completo y el mas rico, No podes no probarlo'
         },
 
         {
@@ -524,7 +567,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Chorizo al Pan',
             Imagen: chorialpan,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Promo, dos chori al pan, lo mejor de lo mejor, No podes no probarlo'
 
         },
 
@@ -534,7 +578,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Pizza Familiar',
             Imagen: pizza,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Pizza familiar con muzzarella y bordes rellenos de muzzarella , No podes no probarla'
         },
 
         {
@@ -543,7 +588,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Quesadillas',
             Imagen: quesadillas,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Las mejores quesadillas, un pack de tres que te van a dejar chocho, No podes no probarlas '
 
         },
 
@@ -553,7 +599,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Tacos de Carne',
             Imagen: tacosCarne,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Desde Mexico, los mejores tacos. No existen mas ricos que estos, No podes no probarlos '
         },
 
         {
@@ -562,7 +609,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Panchos con Muzza',
             Imagen: panchos,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'No hay edad para comer un buen pancho, aca esta el mejor, No podes no probarlo '
 
         },
 
@@ -582,7 +630,9 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Banana',
             Imagen: banana,
             Detalle: 'Precio por unidad',
-            Precio: 150
+            Precio: 150,
+            Adicional: 'Banana ecuatoria, lleva una vida sana, con las mejores frutras'
+            
         },
 
         {
@@ -591,7 +641,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Cebolla',
             Imagen: cebolla,
             Detalle: 'Precio por unidad',
-            Precio: 125
+            Precio: 125,
+            Adicional: 'Cebolla, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -601,7 +652,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Frutilla',
             Imagen: frutilla,
             Detalle: 'Precio por unidad',
-            Precio: 32
+            Precio: 32,
+            Adicional: 'Frutilla, no es de camara, lleva una vida sana, con las mejores frutras'
         },
 
         {
@@ -610,7 +662,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Kiwi',
             Imagen: kiwi,
             Detalle: 'Precio por unidad',
-            Precio: 60
+            Precio: 60,
+            Adicional: 'Kiwi, no es de camara, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -620,7 +673,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Lechuga',
             Imagen: lechuga,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Lechuga, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
         },
 
         {
@@ -629,7 +683,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Mandarina',
             Imagen: mandarina,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Mandarina, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -639,7 +694,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Manzana',
             Imagen: manzana,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Manzana, lleva una vida sana, con las mejores frutras'
         },
 
         {
@@ -648,7 +704,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Morron Rojo',
             Imagen: morronr,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Morron rojo, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -658,7 +715,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Morron Verde',
             Imagen: morronv,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Morron verde, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
         },
 
         {
@@ -667,7 +725,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Naranja',
             Imagen: naranja,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Naranja, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -677,7 +736,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Tomate',
             Imagen: tomate,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Tomate, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
         },
 
         {
@@ -686,7 +746,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Zanahoria',
             Imagen: zanahoria,
             Detalle: 'Precio por unidad',
-            Precio: 45
+            Precio: 45,
+            Adicional: 'Tomate, la mejor calidad, para mas mejores recetas, lleva una vida sana, con las mejores frutras'
 
         },
 
@@ -705,7 +766,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Esponja',
             Imagen: esponja,
             Detalle: 'Precio por unidad',
-            Precio: 15
+            Precio: 15,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI2',
@@ -713,7 +775,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Lavandina',
             Imagen: aguajane,
             Detalle: 'Precio por unidad',
-            Precio: 50
+            Precio: 50,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI3',
@@ -721,7 +784,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Bolsas para Residuos',
             Imagen: bolsaresiduos,
             Detalle: 'Precio por pack de 6',
-            Precio: 15
+            Precio: 15,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI4',
@@ -729,7 +793,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Cif Crema',
             Imagen: cifcrema,
             Detalle: 'Precio por unidad',
-            Precio: 90
+            Precio: 90,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI5',
@@ -737,7 +802,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Cif Limpia Vidrios',
             Imagen: cifvidrios,
             Detalle: 'Precio por unidad',
-            Precio: 10
+            Precio: 10,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI6',
@@ -745,7 +811,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Escoba',
             Imagen: escoba,
             Detalle: 'Precio por unidad',
-            Precio: 35
+            Precio: 35,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI7',
@@ -753,7 +820,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Escobilla',
             Imagen: escobilla,
             Detalle: 'Precio por unidad',
-            Precio: 65
+            Precio: 65,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI8',
@@ -761,7 +829,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Limpiador',
             Imagen: limpiador,
             Detalle: 'Precio por unidad',
-            Precio: 115
+            Precio: 115,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI9',
@@ -769,7 +838,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Pala',
             Imagen: pala,
             Detalle: 'Precio por unidad',
-            Precio: 85
+            Precio: 85,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI10',
@@ -777,7 +847,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Pañales',
             Imagen: panales,
             Detalle: 'Precio por unidad',
-            Precio: 315
+            Precio: 315,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI11',
@@ -785,7 +856,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Papel de Cocina',
             Imagen: papelcocina,
             Detalle: 'Precio por unidad',
-            Precio: 145
+            Precio: 145,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         },
         {
             Codigo: 'LI12',
@@ -793,7 +865,8 @@ const ProveedorProducto = ({ children }) => {
             Nombre: 'Papel Higienico',
             Imagen: papelhigienico,
             Detalle: 'Precio por unidad',
-            Precio: 185
+            Precio: 185,
+            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
         }
     ]
 

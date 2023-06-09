@@ -93,7 +93,7 @@ const CardArticulos = ({ Codigo, Nombre, Categoria, Detalle, Imagen, Precio, add
 
                         </div>
                         <div><h3 style={{ color: variarColor(stock) }}> Stock: {stock}</h3></div>
-                        <div><button onClick={() => navigate(`/${Categoria}/${Codigo}`)} className="btn btn-secondary p-2">Ver mas</button></div>
+                        <div><button onClick={() => navigate(`/${Categoria}/${Codigo}`)} className="btn btn-secondary p-2">Ver detalle</button></div>
                     </div>
                 )}
 

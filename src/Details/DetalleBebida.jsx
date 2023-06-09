@@ -46,6 +46,8 @@ const DetalleBebida = () => {
                  <h1 className="card-title">{articulo.Nombre}</h1>
                  <h2 className="card-title">{articulo.Detalle}</h2>
                  <h3 className="card-title">$ {articulo.Precio}</h3>
+                 <br />
+                 <h5 className="card-title">{articulo.Adicional}</h5>
                  
             </div>
             </div>
