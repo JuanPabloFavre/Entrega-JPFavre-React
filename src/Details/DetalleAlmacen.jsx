@@ -43,6 +43,7 @@ const DetalleAlmacen = () => {
                 <div className="card-body" style={{ width: '30rem' }}>
             <img src={articulo.Imagen} className="card-img-top" alt="..." />
             <div className="card-body ">
+                
                  <h1 className="card-title">{articulo.Nombre}</h1>
                  <h2 className="card-title">{articulo.Detalle}</h2>
                  <h3 className="card-title">$ {articulo.Precio}</h3>

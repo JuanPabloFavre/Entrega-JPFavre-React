@@ -767,7 +767,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: esponja,
             Detalle: 'Precio por unidad',
             Precio: 15,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Esponja Jaspe anatomic ! Mas duradera y resistente que sus competidores. Mas limpio imposible!'
         },
         {
             Codigo: 'LI2',
@@ -776,7 +776,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: aguajane,
             Detalle: 'Precio por unidad',
             Precio: 50,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional:'Agua Lavandina 1 litros Limpia, desinfecta y blanquea. Mas limpio imposible!'
         },
         {
             Codigo: 'LI3',
@@ -785,7 +785,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: bolsaresiduos,
             Detalle: 'Precio por pack de 6',
             Precio: 15,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Bolsas para el hogar! Mas grandes y resistente que sus competidores. Mas limpio imposible!'
         },
         {
             Codigo: 'LI4',
@@ -794,7 +794,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: cifcrema,
             Detalle: 'Precio por unidad',
             Precio: 90,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Cif crema !  limpiador cremoso multiuso con micropartículas que ofrece una máxima limpieza de las superficies con mínimo esfuerzo. Mas limpio imposible!'
         },
         {
             Codigo: 'LI5',
@@ -803,7 +803,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: cifvidrios,
             Detalle: 'Precio por unidad',
             Precio: 10,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional:'Cif limpia vidrios !  limpiador multiuso con micropartículas que ofrece una máxima limpieza de las superficies con mínimo esfuerzo. Mas limpio imposible!'
         },
         {
             Codigo: 'LI6',
@@ -812,7 +812,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: escoba,
             Detalle: 'Precio por unidad',
             Precio: 35,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Escoba de doble barrido, es una escoba GRANDE y delicada a la vez, con gran capacidad de limpieza. Su DISEÑO es EXCLUSIVO, tiene DOBLE CANAL de cerdas. Mas limpio imposible!'
         },
         {
             Codigo: 'LI7',
@@ -821,7 +821,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: escobilla,
             Detalle: 'Precio por unidad',
             Precio: 65,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Escobilla, Cepillo para Baño, Limpia Inodoro con base. Mas limpio imposible!'
         },
         {
             Codigo: 'LI8',
@@ -830,7 +830,8 @@ const ProveedorProducto = ({ children }) => {
             Imagen: limpiador,
             Detalle: 'Precio por unidad',
             Precio: 115,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Los Limpiadores Poett no solo Limpian, también Desinfectan y Aromatizan. ¡Conocelos! Alegrá tu Día. Fragancias Inigualables. Pará y Respirá. Mas limpio imposible!'
+            
         },
         {
             Codigo: 'LI9',
@@ -839,7 +840,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: pala,
             Detalle: 'Precio por unidad',
             Precio: 85,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Pala de plástico con mango largo. Su diseño permite trabar la pala con los pies sin necesidad de agacharse. Mas limpio imposible!'
         },
         {
             Codigo: 'LI10',
@@ -848,7 +849,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: panales,
             Detalle: 'Precio por unidad',
             Precio: 315,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Los pañales Babysec Ultra son la elección perfecta para brindar comodidad y protección a tu bebé. Mas limpio imposible!'
         },
         {
             Codigo: 'LI11',
@@ -857,7 +858,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: papelcocina,
             Detalle: 'Precio por unidad',
             Precio: 145,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Papel Toalla de Cocina Nube Blanca Doble Hoja x3. Confeccionados en pura celulosa 100% virgen. Estampados para un mayor rendimiento. Mas limpio imposible!'
         },
         {
             Codigo: 'LI12',
@@ -866,7 +867,7 @@ const ProveedorProducto = ({ children }) => {
             Imagen: papelhigienico,
             Detalle: 'Precio por unidad',
             Precio: 185,
-            Adicional: 'Refresco POMELO 1.5 Litros Descartable, disfruta el refrescante sabor'
+            Adicional: 'Papel higiénico de hoja simple, presentado en rollos de 30 metros. 100% papel tissue con un tratamiento que permite lograr una agradable textura al contacto.  Mas limpio imposible!'
         }
     ]
 

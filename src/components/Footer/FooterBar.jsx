@@ -8,7 +8,7 @@ const FooterBar = (props) => {
         <div  className="footer bg-body-tertiary opacity-50 ">
            <ul className='ulFooter'>
 						{props.items?.map((texto,index) =>(
-							<FooterBarItem key={index} texto ={texto}/>
+							<FooterBarItem key={index} texto ={texto} />
 						))}
 		
 					</ul>

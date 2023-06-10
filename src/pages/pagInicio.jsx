@@ -9,7 +9,10 @@ import Banner from '../components/Bootstrap/banner'
 
 
 
+
 const pagInicio = () => {
+
+
 
   return (
     <div className="App">
