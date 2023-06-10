@@ -23,7 +23,7 @@ useEffect(() => {
 const col = collection(db,"Bebidas")
 const data = await getDocs(col)
 const docs = data.docs.map(doc => doc={ id:doc.id, ...doc.data()}) 
-console.log(docs)
+
     }catch(error){
 
   }
@@ -38,6 +38,7 @@ getProd()
     <div className="App">
      
       <Rutas/>
+      
       
     </div>
     

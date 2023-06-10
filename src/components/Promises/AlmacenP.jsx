@@ -52,7 +52,7 @@ const AlmacenP  = () => {
 
             <div className='articulos'>
                     {almacen.map((item)=>(
-                       <Articulos  addCarrito={addCarrito} {...item} />
+                       <Articulos key={item.Codigo}  addCarrito={addCarrito} {...item} />
                        
 
                  ))}

@@ -3,6 +3,7 @@ import '../../styles/style.css'
 import FooterBarItem from './FooterBarItem';
 
 
+
 const FooterBar = (props) => {
     return (
         <div  className="footer bg-body-tertiary opacity-50 ">

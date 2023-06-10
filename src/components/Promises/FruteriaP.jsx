@@ -56,7 +56,7 @@ const FruteriaP = () => {
                 <div className='articulos'>
 
                     {fruterias.map((item) => (
-                        <Articulos addCarrito={addCarrito} {...item} />
+                        <Articulos key={item.Codigo} addCarrito={addCarrito} {...item} />
 
                     ))}
                 </div>

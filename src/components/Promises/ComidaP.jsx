@@ -55,7 +55,7 @@ const ComidaP = () => {
                 <div className='articulos'>
 
                     {comidas.map((item) => (
-                        <Articulos addCarrito={addCarrito} {...item} />
+                        <Articulos key={item.Codigo} addCarrito={addCarrito} {...item} />
 
                     ))}
                 </div>
